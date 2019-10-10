@@ -1,11 +1,4 @@
-    //
-    //  StoryBrain.swift
-    //  Destini-iOS13
-    //
-    //  Created by Angela Yu on 08/08/2019.
-    //  Copyright © 2019 The App Brewery. All rights reserved.
-    //
-    
+
     import Foundation
     
     struct StoryBrain {
@@ -60,7 +53,6 @@
         mutating func nextStory(userChoice: String) {
             
             let currentStory = stories[storyNumber]
-            
             if userChoice == currentStory.choice1 {
                 storyNumber = currentStory.choice1Destination
             } else if userChoice == currentStory.choice2 {
